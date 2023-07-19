@@ -7,7 +7,7 @@ function NavBar() {
       <nav className="navbar has-shadow is-black is-spaced" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="#">
-              <img src={logo} alt="logo" width="112" height="28" />
+              <span className="is-size-4">Sneaker Vault</span>
           </a>
           <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarOptions">
             <span aria-hidden="true"></span>
@@ -31,7 +31,9 @@ function NavBar() {
             </a>
           </div>
           <div className="navbar-end">
-            <CartWidget />
+            <a className="navbar-item">
+              <CartWidget />
+            </a>
           </div>
         </div>
       </nav>
